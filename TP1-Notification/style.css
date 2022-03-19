@@ -3,23 +3,23 @@
   --danger-color: #df4759;
   --warning-color: #ffc107;
   --info-color: #007bff;
-  --diration: 1s;
+  --duration: 1s;
 }
 @keyframes anime {
     from {
-      transform: translate(0%, 0%);
-      color: #ebedef;
-      opacity : 0;
+        transform: translate(0%, -500%);
+        color: #000;
+        opacity : 0;
     }
     to {
-      transform: translate(0%, -250%);
-      color: #df4759;
+      transform: translate(0%, 0%);
+      color: #fff;
       opacity : 1;
     }
   }
 
 body {
-  transition: 1s;
+  transition: var(--duration);
   background-color: #ebedef;
 }
 .containt-button {
@@ -43,7 +43,7 @@ body {
 }
 .containt-button button:nth-child(1) {
   background-color: var(--success-color);
-  transform: var(--diration);
+  transform: var(--duration);
 }
 .containt-button button:nth-child(2) {
   background-color: var(--danger-color);
@@ -72,17 +72,17 @@ span {
 }
 .containt-alert.success {
   background-color: var(--success-color);
-  animation: var(--diration) anime;
+  animation: var(--duration) anime;
 }
 .containt-alert.danger {
   background-color: var(--danger-color);
-  animation: var(--diration) anime;
+  animation: var(--duration) anime;
 }
 .containt-alert.warning {
   background-color: var(--warning-color);
-  animation: var(--diration) anime;
+  animation: var(--duration) anime;
 }
 .containt-alert.info {
   background-color: var(--info-color);
-  animation: var(--diration) anime;
+  animation: var(--duration) anime;
 }

@@ -1,0 +1,95 @@
+*{
+    color: #fff;
+}
+nav{
+    background-color: rgb(79, 89, 98);
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    top: 0;
+}
+.profile, .logo{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+} 
+.profile{
+    width: 96%;
+    margin: auto;
+}
+.logo small{
+    font-size: 1.5rem;
+}
+.profile img, .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 20px 10px 10px 20px
+}
+.search{
+    height: 6vh;
+    display: flex;
+    background-color: rgb(63, 71, 78);
+    margin: 1.5%;
+    border-radius: 10px;
+}
+.search input{
+    margin: auto;
+    height: 90%;
+    background-color: rgb(63, 71, 78);
+    margin-top: 4.5px;
+    border: none;
+    flex: 8;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-end-start-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.search input:focus{
+    border: none;
+}
+.search .icone-search{
+    height: 100%;
+    flex: 2;
+    background-image: url('../public/imgs/icone-sharch.svg') ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-1{
+    background-color: rgb(0, 123, 255);
+    width: 25vw;
+    margin: auto;
+    border-radius: 5px;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.dashboard-1 div{
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-1 div i , .widgets div i{
+    margin-right: 20%;
+}
+.dashboard-1 i , .widgets span{
+    margin-right: 4%;
+}
+.widgets{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 5%; */
+}
+.widgets div{
+    display: flex;
+    justify-content: space-around;
+}
+.news{
+    background-color: red;
+    border-radius: 3px;
+    font-weight: bold;
+}
