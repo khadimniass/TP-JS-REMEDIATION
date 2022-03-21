@@ -14,6 +14,7 @@ const setSlidePosition = (slide, i) => {
   slide.style.left = widthSlide * i + "px";
 };
 slides.forEach(setSlidePosition);
+
 // slides.forEach((slide, i) =>{
 //     slide.style.left = widthSlide * i + 'px';
 // });
