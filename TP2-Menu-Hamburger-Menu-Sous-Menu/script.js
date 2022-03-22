@@ -76,8 +76,11 @@ bouton.addEventListener("click", () => {
 
 // menu.addEventListener('mouseover',() =>
 // {
-//     menu.classList.toggle('menu');
-//     menu.classList.toggle('active');
+//   menu.classList.add('active');
+// });
+
+// menu.addEventListener('mouseout', ()=>{
+//   menu.classList.remove('active');
 // });
 
 for (let i = 0; i < tableauElement.length; i++) {

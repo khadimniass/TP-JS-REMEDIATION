@@ -1,0 +1,98 @@
+:root{
+    --primary-color : #3A0077;
+    --second-color: #373b69;
+    --white-color: #fff;
+    --duration-anime : .8s;
+}
+*{
+    box-sizing: border-box;
+}
+@keyframes displayComment {   
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+        background-color: var(--primary-color);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(10%);
+        background-color: var(--white-color);
+    }
+}
+body{
+    background-color: var(--primary-color);
+    margin: 0;
+}
+ header{
+    height: 10%;
+    /* border:  1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2%;
+}
+
+input{
+    background-color: transparent;
+    padding:0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+input:focus{
+    background-color: var(--primary-color);
+    opacity: .5;
+}
+ .container{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, 400px);
+ justify-content: center;
+}
+.item{
+    border: 1px solid white;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: var(--second-color);
+    position: relative;
+    box-shadow: 0 2px 2px 2px var(--second-color);
+}
+
+
+.item img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.item img:hover{
+    transform: scale(1.01);
+    /* animation: displayComment 1s; */
+}
+.info{
+    color: var(--white-color);
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vert{
+    background-color: var(--primary-color);
+    color: green;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 5px;
+}
+.view{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--white-color);
+    max-height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    visibility: hidden;
+}
+.item:hover .view{
+    visibility: visible;
+    animation: displayComment var(--duration-anime) ;
+}
