@@ -13,6 +13,13 @@ nextYear.innerHTML= dateCourante +1;
 function compteARebours() {
   const nombreMillisecondeAvant = new Date();
   const diff = nouvelleAnnee - nombreMillisecondeAvant;
+  
+  // const ObjetDate = new Date(diff);
+  // const nombreJours = ObjetDate.getDate();
+  // const nombreHeures = ObjetDate.getHours();
+  // const nombreMinutes = ObjetDate.getMinutes();
+  // const nombreSecondes = ObjetDate.getSeconds();
+
   const nombreJours = Math.floor(diff / 1000 / (60 * 60 * 24));
   const nombreHeures = Math.floor(diff / 1000 / (60 * 60)) % 24;
   const nombreMinutes = Math.floor(diff / 1000 / 60) % 60;
