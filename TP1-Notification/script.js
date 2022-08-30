@@ -8,7 +8,7 @@ function addDiv(classAdded, button) {
   mdiv.className = `containt-alert ${classAdded}`;
   mdiv.appendChild(span);
   document.body.appendChild(mdiv);
-  setTimeout(()=>mdiv.remove() , 1000);
+  setTimeout(()=>mdiv.remove() , 1500);
 }
 
 btn[0].addEventListener("click", () => {

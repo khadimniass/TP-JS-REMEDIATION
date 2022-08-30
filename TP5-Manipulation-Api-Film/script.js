@@ -9,7 +9,7 @@ const API_LOCAL = "APIURL.json";
 const container = document.querySelector(".container");
 const form = document.querySelector("form");
 const recherche = document.querySelector("#src");
-const loading = document.querySelector('.loading-style-5');
+const loading = document.querySelector(".loading-style-5");
 // let backdrop_path = [];
 // let poster_path = [];
 convertirUrl(APIURL);
@@ -77,10 +77,10 @@ window.addEventListener("scroll", () => {
   if (taille_de_la_page >= scrollHeight - 10) {
     nombrePage++;
     let url_chargement = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=${nombrePage}`;
-    loading.classList.add('show-load')
+    loading.classList.add("show-load");
     setTimeout(() => {
       convertirUrl(url_chargement);
-    },2000);
-    // loading.classList.remove('show-load')
+      loading.classList.remove("show-load");
+    }, 2000);
   }
 });

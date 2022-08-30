@@ -56,10 +56,8 @@ caroussel_nav.addEventListener('click', e=>{
             indexTarget=index;
         }
     });
-    console.log(buttonCourant);
     const targetSlide=slides[indexTarget];
     moveToslide(slideCourant,targetSlide);
 
     // updateBtn(buttonCourant,slideCourant);
 });
-//48:41

@@ -10,6 +10,8 @@ const containtGenerateRecette = document.querySelector(".recette-genere");
 const Containtpopup = document.querySelector('.popup');
 const search=document.getElementById('search');
 
+// const dat = await getData()
+// async fetch getData();
 
 generateur(LINK_RANDOM);
 // openPopup.addEventListener("click", () => {
@@ -183,3 +185,4 @@ function creatorpopup(tab) {
         Containtpopup.appendChild(divpopBottom);
     });
 }
+

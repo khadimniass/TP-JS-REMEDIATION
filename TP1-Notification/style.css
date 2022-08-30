@@ -3,7 +3,7 @@
   --danger-color: #df4759;
   --warning-color: #ffc107;
   --info-color: #007bff;
-  --duration: 1s;
+  --duration: .7s;
 }
 @keyframes anime {
     from {
